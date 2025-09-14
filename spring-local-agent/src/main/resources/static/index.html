@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        const eventSource = new EventSource('/sse/stream');
+        eventSource.onmessage = (event) => {
+            console.log('Received:', event.data);
+        };
+        eventSource.onerror = (error) => {
+            console.error('Error:', error);
+            eventSource.close();
+        };
+    </script>
+</body>
+</html>

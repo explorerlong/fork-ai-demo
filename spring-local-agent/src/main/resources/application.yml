@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-ai-alibaba-openmanus
+  ai:
+    mcp:
+      server:
+        name: my-weather-server
+        type: SYNC
+        version: 0.0.1
+        sse-message-endpoint: /mcp/message
+        capabilities:
+          resource: true
+          tool: true
+          completion: true
+# ding secret > 启动命令行
+logging:
+  level:
+    root: INFO
+    

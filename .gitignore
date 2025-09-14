@@ -1,4 +1,5 @@
 target/
+a/
 
 ### IntelliJ IDEA ###
 .idea/*
@@ -75,3 +76,4 @@ modified_mcp_config.json
 !/spring-ai-alibaba-studio/spring-ai-alibaba-studio-server/docker/middleware/kibana/data/
 !/spring-ai-alibaba-studio/spring-ai-alibaba-studio-server/docker/middleware/kibana/data/.gitkeep
 /spring-ai-alibaba-studio/ui/
+/spring-local-agent/
